@@ -3,8 +3,12 @@ import 'package:flutter/material.dart';
 
 import 'counter/app.dart';
 import 'counter/counter_observer.dart';
+import 'timer/app.dart';
 
-void main() {
-  BlocOverrides.runZoned(() => runApp(const CounterApp()),
-      blocObserver: CounterObserver());
-}
+// counter
+// void main() {
+//   BlocOverrides.runZoned(() => runApp(const CounterApp()),
+//       blocObserver: CounterObserver());
+// }
+
+void main() => runApp(App());
